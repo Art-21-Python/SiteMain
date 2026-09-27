@@ -13,7 +13,7 @@
     var counter = 0
     function click(){
         counter = counter + 1;
-        document.getElementById('#window').innerHTML(counter);
+        document.getElementById('#window').innerHTML = (counter);
 
 </script>
 </head>
@@ -40,7 +40,7 @@
         border-radius: 35px;
         border: 1px solid blue;
         width: 95%;
-        height: 20px;
+        height: 95%;
    } 
    #logo{
        text-align: center;
@@ -59,6 +59,12 @@
         color: blue;
 } 
 
+    #window{
+        background-color: blue;
+        color: white;
+        margin: 2% 2% 2% 2%;
+        border-radius: 15px;
+    } 
     </style>
     <header>
         <h1 id='logo' >Портал наследия</h1>
@@ -66,12 +72,12 @@
 
 
     <main>
+        <div id='card'>
 
         <h2 id='center'>Кликер!</h2>
 
-        <div id='card'>
             <button type='button' onclick='click'>Клик!</button>
-            <div id='window'></div>
+            <h2 id="window"></h2>
         </div>
         
 
