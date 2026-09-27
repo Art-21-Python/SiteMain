@@ -10,6 +10,10 @@
 <title>Портал наследия - кликер</title>
 
 <script>
+    var counter = 0
+    function click(){
+        counter = counter + 1;
+        document.getElementById('#window').innerHTML(counter);
 
 </script>
 </head>
@@ -56,9 +60,6 @@
 } 
 
     </style>
-    <script>
-
-    </script>
     <header>
         <h1 id='logo' >Портал наследия</h1>
           </header>
@@ -70,6 +71,7 @@
 
         <div id='card'>
             <button type='button' onclick='click'>Клик!</button>
+            <div id='window'></div>
         </div>
         
 
