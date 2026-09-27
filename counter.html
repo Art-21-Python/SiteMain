@@ -11,9 +11,9 @@
 
 <script>
     var counter = 0
-    function click(){
+    function plus(){
         counter = counter + 1;
-        document.getElementById('#window').innerHTML = (counter);
+        document.getElementById('window').innerHTML = (counter);
 
 </script>
 </head>
@@ -53,6 +53,7 @@
 #card{
         border: 1px solid blue;
         border-radius: 15px;
+        text-align: center;
 } 
 
     h2{
@@ -76,7 +77,7 @@
 
         <h2 id='center'>Кликер!</h2>
 
-            <button type='button' onclick='click'>Клик!</button>
+            <button type='button' onclick='plus()'>Клик!</button>
             <h2 id="window"></h2>
         </div>
         
