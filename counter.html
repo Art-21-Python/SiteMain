@@ -1,98 +1,92 @@
 <!doctype html>
 <html lang="ru">
-
 <head>
     <meta charset="utf-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    
-<title>Портал наследия - кликер</title>
-
-
-</head>
-
-<body>
-
+    <title>Портал наследия - кликер</title>
     <style>
-        header{
+        header {
             background-color: blue;
             color: white;
-    }
-    main{
-        background-color: white;
-        color: black;
-}
-    footer{
-        color: gray;
-        background-color: black;
-        text-align: center;
-} 
-    button{
-        background-color: gray;
-        color: white;
-        border-radius: 35px;
-        border: 1px solid blue;
-        width: 95%;
-        height: 95%;
-   } 
-   #logo{
-       text-align: center;
-       margin-top: 1px;
-} 
-#center{
-        text-align: center;
-} 
-
-#card{
-        border: 1px solid blue;
-        border-radius: 15px;
-        text-align: center;
-} 
-
-    h2{
-        color: blue;
-} 
-
-    #window{
-        background-color: blue;
-        color: white;
-        margin: 2% 2% 2% 2%;
-        border-radius: 15px;
-    } 
+        }
+        main {
+            background-color: white;
+            color: black;
+        }
+        footer {
+            color: gray;
+            background-color: black;
+            text-align: center;
+        }
+        button {
+            background-color: gray;
+            color: white;
+            border-radius: 35px;
+            border: 1px solid blue;
+            width: 95%;
+            height: 95%;
+        }
+        #logo {
+            text-align: center;
+            margin-top: 1px;
+        }
+        
+        .center-content {
+            text-align: center;
+        }
+        #card {
+            border: 1px solid blue;
+            border-radius: 15px;
+            text-align: center;
+            padding: 20px; 
+        }
+        h2 {
+            color: blue;
+        }
+        #window {
+            background-color: blue;
+            color: white;
+            margin: 2% 2% 2% 2%;
+            border-radius: 15px;
+            display: inline-block; 
+            padding: 10px 20px;
+            min-width: 50px;
+        }
     </style>
-    <header>
-        <h1 id='logo' >Портал наследия</h1>
-          </header>
+</head>
+<body>
 
+    <header>
+        <h1 id='logo'>Портал наследия</h1>
+    </header>
 
     <main>
         <div id='card'>
-
-        <h2 id='center'>Кликер!</h2>
-
-            <button type='button' onclick='plus()'>Клик!</button>
-            <div id="window"></div>
+            
+            <div class="center-content">
+                <h2>Кликер!</h2>
+                
+                <button id="click-btn" type='button' onclick='plus()'>Клик!</button>
+                <div id="window">0</div>
+            </div>
         </div>
-        
-
     </main>
 
     <footer>
         <p>Сайт запущен в <u>Тестовом</u> режиме</p>
-       <br></br>
-       
-
-     <button id='center' onclick='window.print()' type='button'>Распечатать</button>
+        <br>
+        
+        <button type='button' onclick='window.print()'>Распечатать</button>
     </footer>
 
+    
     <script>
-    var counter = 0
-    function plus(){
-        counter++;
-        document.getElementById('window').innerHTML = (counter);
+        var counter = 0;
 
+        function plus() {
+            counter++; 
+            document.getElementById('window').innerHTML = counter;
+        }
     </script>
 </body>
-
 </html>
