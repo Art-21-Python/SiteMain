@@ -9,13 +9,7 @@
     
 <title>Портал наследия - кликер</title>
 
-<script>
-    var counter = 0
-    function plus(){
-        counter = counter + 1;
-        document.getElementById('window').innerHTML = (counter);
 
-</script>
 </head>
 
 <body>
@@ -75,7 +69,7 @@
     <main>
         <div id='card'>
 
-        <div id='center'>Кликер!</h2>
+        <h2 id='center'>Кликер!</h2>
 
             <button type='button' onclick='plus()'>Клик!</button>
             <div id="window"></div>
@@ -91,6 +85,14 @@
 
      <button id='center' onclick='window.print()' type='button'>Распечатать</button>
     </footer>
+
+    <script>
+    var counter = 0
+    function plus(){
+        counter++;
+        document.getElementById('window').innerHTML = (counter);
+
+    </script>
 </body>
 
 </html>
