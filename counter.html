@@ -86,6 +86,7 @@
         function plus() {
             counter++; 
             document.getElementById('window').innerHTML = counter;
+            document.cookie="save= " + counter + "; path=/; max-age=31536000;"
         }
     </script>
 </body>
