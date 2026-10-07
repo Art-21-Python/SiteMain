@@ -83,16 +83,18 @@
     <script>
         var counter = 0;
 
+        window.onload = function() {
+            const savedCounter = localStorage.getItem('save');
+            if (savedCounter) {
+                document.getElementById('window').innerHTML = savedCounter;
+            
+
         function plus() {
             let counter = localStorage.getItem('save') ? parseInt(localStorage.getItem('save')) : 0;
             counter++;
             document.getElementById('window').innerHTML = counter;
             localStorage.setItem('save', counter);
 
-            window.onload = function() {
-            const savedCounter = localStorage.getItem('save');
-            if (savedCounter) {
-                document.getElementById('window').innerHTML = savedCounter;
             
         } 
     </script>
