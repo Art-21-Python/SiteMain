@@ -67,7 +67,9 @@
                 <h2>Кликер!</h2>
                 
                 <button id="click-btn" type='button' onclick='plus()'>Клик!</button>
-                <div id="window">Нажмите «Клик!»</div>
+                <div id="window">Загрузка...</div>
+
+                <div id=status>Загрузка...</div>
             </div>
         </div>
     </main>
@@ -88,6 +90,10 @@
         counter++;
         document.getElementById('window').innerHTML = counter;
         localStorage.setItem('save', counter);
+        if counter < 100() {
+            document.getElementById ('status').innerHTML = 'Начинающий';
+        } 
+        
     }
 
     window.onload = function() {
