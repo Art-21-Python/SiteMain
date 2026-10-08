@@ -81,22 +81,24 @@
 
     
     <script>
-        var counter = 0;
+        
+    function plus() {
+        
+        let counter = localStorage.getItem('save') ? parseInt(localStorage.getItem('save'), 10) : 0;
+        counter++;
+        document.getElementById('window').innerHTML = counter;
+        localStorage.setItem('save', counter);
+    }
 
-        window.onload = function() {
-            const savedCounter = localStorage.getItem('save');
-            if (savedCounter) {
-                document.getElementById('window').innerHTML = savedCounter;
+    window.onload = function() {
+        const savedCounter = localStorage.getItem('save');
+        if (savedCounter) {
+            document.getElementById('window').innerHTML = savedCounter;
+        } else {
             
-
-        function plus() {
-            let counter = localStorage.getItem('save') ? parseInt(localStorage.getItem('save')) : 0;
-            counter++;
-            document.getElementById('window').innerHTML = counter;
-            localStorage.setItem('save', counter);
-
-            
-        } 
+            document.getElementById('window').innerHTML = '0';
+        }
+    };
     </script>
 </body>
 </html>
