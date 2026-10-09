@@ -66,10 +66,10 @@
             <div class="center-content">
                 <h2>Кликер!</h2>
                 
-                <button id="click-btn" type='button' onclick='plus()'>Клик!</button>
+                <button id="click-btn" type='button' onclick='count()'>Клик!</button>
                 <div id="window">Загрузка...</div>
 
-                <div id=status>Нажмите «Клик!»</div>
+                <div id=status>Нажмите «Клик!» или пробел</div>
             </div>
         </div>
     </main>
@@ -83,8 +83,12 @@
 
     
     <script>
+
+        if (event.key === 'Space') {
+            count();
+  }
         
-    function plus() {
+    function count() {
         
         let counter = localStorage.getItem('save') ? parseInt(localStorage.getItem('save'), 10) : 0;
         counter++;
