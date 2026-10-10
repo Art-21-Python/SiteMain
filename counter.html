@@ -123,6 +123,10 @@
             
             document.getElementById('window').innerHTML = '0';
         }
+        document.addEventListener('keydown', function(event) {
+        if (event.key === ' ') { 
+            count();
+        } 
     };
         
     </script>
