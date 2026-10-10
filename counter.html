@@ -113,6 +113,9 @@
     }
 
     window.onload = function() {
+        if (event.key === 'Space') {
+            count();
+        }
         const savedCounter = localStorage.getItem('save');
         if (savedCounter) {
             document.getElementById('window').innerHTML = savedCounter;
@@ -121,9 +124,7 @@
             document.getElementById('window').innerHTML = '0';
         }
     };
-        if (event.key === 'Space') {
-            count();
-        }
+        
     </script>
 </body>
 </html>
