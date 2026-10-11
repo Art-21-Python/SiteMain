@@ -66,7 +66,7 @@
             <div class="center-content">
                 <h2>Кликер!</h2>
                 
-                <button id="click-btn" type='button' onclick='count()'>Клик!</button>
+                <button id="click-btn" type='button' onclick='plus()'>Клик!</button>
                 <div id="window">Загрузка...</div>
 
                 <div id=status>Нажмите «Клик!»</div>
@@ -83,10 +83,8 @@
 
     
     <script>
-
         
-        
-    function count() {
+    function plus() {
         
         let counter = localStorage.getItem('save') ? parseInt(localStorage.getItem('save'), 10) : 0;
         counter++;
@@ -120,9 +118,7 @@
             
             document.getElementById('window').innerHTML = '0';
         }
-        document.addEventListener('keydown', function(event) {
     };
-        
     </script>
 </body>
 </html>
