@@ -69,7 +69,7 @@
                 <button id="click-btn" type='button' onclick='plus()'>Клик!</button>
                 <div id="window">Загрузка...</div>
 
-                <div id=status>Нажмите «Клик!»</div>
+                <div id="status">Нажмите «Клик!»</div>
             </div>
         </div>
     </main>
@@ -91,18 +91,18 @@
         document.getElementById('window').innerHTML = counter;
         localStorage.setItem('save', counter);
         if (counter >= 10000) {
-        document.getElementById('window').innerHTML = 'Нереально';
+        document.getElementById('status').innerHTML = 'Нереально';
     } else if (counter >= 5000) {
-        document.getElementById('window').innerHTML = '2 + 2 = 5000';
+        document.getElementById('status').innerHTML = '2 + 2 = 5000';
     } else if (counter >= 1000) {
-        document.getElementById('window').innerHTML = 'Тысяча, тысяча!';
+        document.getElementById('status').innerHTML = 'Тысяча, тысяча!';
     } else if (counter >= 500) {
-        document.getElementById('window').innerHTML = 'Молодец';
+        document.getElementById('status').innerHTML = 'Молодец';
     } else if (counter >= 100) {
-        document.getElementById('window').innerHTML = 'Любитель';
+        document.getElementById('status').innerHTML = 'Любитель';
     } else {
 
-        document.getElementById('window').innerHTML = 'Начинающий';
+        document.getElementById('status').innerHTML = 'Начинающий';
     }
     }
 
