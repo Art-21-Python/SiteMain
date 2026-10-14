@@ -91,18 +91,18 @@
         document.getElementById('window').innerHTML = counter;
         localStorage.setItem('save', counter);
         if (counter >= 10000) {
-        statusEl.innerHTML = 'Нереально';
+        document.getElementById('window').innerHTML = 'Нереально';
     } else if (counter >= 5000) {
-        statusEl.innerHTML = '2 + 2 = 5000';
+        document.getElementById('window').innerHTML = '2 + 2 = 5000';
     } else if (counter >= 1000) {
-        statusEl.innerHTML = 'Тысяча, тысяча!';
+        document.getElementById('window').innerHTML = 'Тысяча, тысяча!';
     } else if (counter >= 500) {
-        statusEl.innerHTML = 'Молодец';
+        document.getElementById('window').innerHTML = 'Молодец';
     } else if (counter >= 100) {
-        statusEl.innerHTML = 'Любитель';
+        document.getElementById('window').innerHTML = 'Любитель';
     } else {
-        // Сюда попадут все значения меньше 100
-        statusEl.innerHTML = 'Начинающий';
+
+        document.getElementById('window').innerHTML = 'Начинающий';
     }
     }
 
