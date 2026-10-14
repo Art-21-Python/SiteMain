@@ -90,24 +90,20 @@
         counter++;
         document.getElementById('window').innerHTML = counter;
         localStorage.setItem('save', counter);
-        if (counter > 10000){
-            document.getElementById ('status').innerHTML = 'Нереально';
-        } 
-        if (counter > 5000){
-            document.getElementById ('status').innerHTML = '2 + 2 = 5000';
-        } 
-        if (counter > 1000){
-            document.getElementById ('status').innerHTML = 'Тысяча, тысяча!';
-        } 
-        if (counter > 500){
-            document.getElementById ('status').innerHTML = 'Молодец';
-        } 
-        if (counter > 100){
-            document.getElementById ('status').innerHTML = 'Любитель';
-        } 
-        if (counter < 100){
-            document.getElementById ('status').innerHTML = 'Начинающий';
-        } 
+        if (counter >= 10000) {
+        statusEl.innerHTML = 'Нереально';
+    } else if (counter >= 5000) {
+        statusEl.innerHTML = '2 + 2 = 5000';
+    } else if (counter >= 1000) {
+        statusEl.innerHTML = 'Тысяча, тысяча!';
+    } else if (counter >= 500) {
+        statusEl.innerHTML = 'Молодец';
+    } else if (counter >= 100) {
+        statusEl.innerHTML = 'Любитель';
+    } else {
+        // Сюда попадут все значения меньше 100
+        statusEl.innerHTML = 'Начинающий';
+    }
     }
 
     window.onload = function() {
