@@ -1,0 +1,36 @@
+header{
+            background-color: blue;
+            color: white;
+    }
+    main{
+        background-color: white;
+        color: black;
+}
+    footer{
+        color: gray;
+        background-color: black;
+} 
+    button{
+        background-color: gray;
+        color: white;
+        border-radius: 35px;
+        border: 1px solid blue;
+        width: 95%;
+        height: 20px;
+   } 
+   #logo{
+       text-align: center;
+       margin-top: 1px;
+} 
+    .center{
+        text-align: center;
+} 
+    .card{
+        border: 1px solid blue;
+        border-radius: 15px;
+        text-align: center;
+} 
+
+    h2{
+        color: blue;
+    } 
