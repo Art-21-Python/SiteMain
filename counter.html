@@ -66,8 +66,7 @@
             
             <div class="center-content">
                 <h2>Кликер!</h2>
-                
-                <button id="click-btn" type='button' onclick='plus()'>Клик!</button>
+            
                 <div id="window">Загрузка...</div>
 
                 <div id="status">Нажмите «Клик!»</div>
@@ -76,16 +75,20 @@
     </main>
 
     <footer>
+        <p>Игра «Кликер», версия 1.1</p>
         <p>Сайт запущен в <u>Тестовом</u> режиме</p>
         <br>
         
         <button type='button' onclick='window.print()'>Распечатать</button>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
     
     <script>
         
-    function plus() {
+    $('main').click(function() {
         
         let counter = localStorage.getItem('save') ? parseInt(localStorage.getItem('save'), 10) : 0;
         counter++;
@@ -105,7 +108,7 @@
 
         document.getElementById('status').innerHTML = 'Начинающий';
     }
-    }
+    })
 
     window.onload = function() {
         const savedCounter = localStorage.getItem('save');
