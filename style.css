@@ -9,6 +9,7 @@ header{
     footer{
         color: gray;
         background-color: black;
+        text-align: center;
 } 
     button{
         background-color: gray;
