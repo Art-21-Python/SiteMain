@@ -34,3 +34,12 @@ header{
     h2{
         color: blue;
     } 
+    #window {
+            background-color: blue;
+            color: white;
+            margin: 2% 2% 2% 2%;
+            border-radius: 15px;
+            display: inline-block; 
+            padding: 10px 20px;
+            min-width: 50px;
+    } 
