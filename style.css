@@ -30,11 +30,14 @@ header{
         border: 1px solid blue;
         border-radius: 15px;
         text-align: center;
+        
 } 
     .red-card{
         border: 1px solid red;
         border-radius: 15px;
         text-align: center;
+        color: red;
+        background-color: e52b50;
 } 
 
     h2{
