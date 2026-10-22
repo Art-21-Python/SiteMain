@@ -27,6 +27,11 @@
                 <br></br>
             </div>
         </div>
+
+        <div class="card">
+            <h2>Магазин</h2>
+            <button id = "up" onclick=upgrade()>Загрузка...</button>
+        </div>
     </main>
 
     <footer class='center'>
@@ -46,7 +51,7 @@
     $('main').click(function() {
         
         let counter = localStorage.getItem('save') ? parseInt(localStorage.getItem('save'), 10) : 0;
-        counter++;
+        counter=counter+ups;
         document.getElementById('window').innerHTML = counter;
         localStorage.setItem('save', counter);
         if (counter >= 10000) {
@@ -73,6 +78,15 @@
             
             document.getElementById('window').innerHTML = '0';
         }
+        const ups = localStorage.getItem('up');
+        if (ups) {
+            document.getElementById('upgrade').innerHTML = up + ' клика за раз! Стойкость 1000 кликов';
+        } else {
+            ups = 1;
+            
+            document.getElementById('upgrade').innerHTML = '2 клика за раз! Стойкость 1000 кликов';
+        }
+        
     };
     </script>
 </body>
