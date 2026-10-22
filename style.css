@@ -36,9 +36,10 @@ header{
         border: 1px solid red;
         border-radius: 15px;
         text-align: center;
-        color: red;
-        background-color: e52b50;
 } 
+    .red-card h2{
+        color: red;
+    } 
 
     h2{
         color: blue;
